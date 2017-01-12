@@ -176,14 +176,14 @@ class PostView extends React.Component {
                 {this.props.post.message}
               </CardText>
               <CardActions>
-                <FlatButton label="Is Helpful" onClick={this.isHelpful.bind(this)}/>
+                <FlatButton label="Helpful" onClick={this.isHelpful.bind(this)}/>
                   <Badge
                     badgeContent={this.state.helpful}
                     primary={true}
                   >
                     <SentimentVerySatisfied />
                   </Badge>
-                <FlatButton label="Is Unhelpful" onClick={this.isUnhelpful.bind(this)}/>
+                <FlatButton label="Unhelpful" onClick={this.isUnhelpful.bind(this)}/>
                   <Badge
                     badgeContent={this.state.unhelpful}
                     primary={true}
