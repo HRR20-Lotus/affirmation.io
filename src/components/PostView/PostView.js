@@ -8,6 +8,7 @@ import axios from 'axios';
 import { Card, CardActions, CardHeader, CardTitle, CardText } from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import Badge from 'material-ui/Badge';
+import Divider from 'material-ui/Divider';
 import SentimentVerySatisfied from 'material-ui/svg-icons/social/sentiment-very-satisfied';
 import SentimentVeryDissatisfied from 'material-ui/svg-icons/social/sentiment-very-dissatisfied';
 
@@ -169,6 +170,7 @@ class PostView extends React.Component {
                 subtitle={this.props.post.user.job + ' - ' + this.props.post.user.location}
                 avatar={this.props.post.user.avatar}
               />
+              <Divider />
             <CardTitle titleStyle={{ 'text-align': 'center' }} title={this.props.post.title} />
               <CardText>
                 {this.props.post.message}
