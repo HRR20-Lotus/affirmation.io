@@ -66,7 +66,6 @@ class PostPreview extends React.Component {
       overflow: 'auto',
     };
     const center = {
-      backgroundColor: '#28E498',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
